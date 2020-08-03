@@ -1,0 +1,108 @@
+.cardWrapper {
+  margin: -25% auto 50px;
+  z-index: 9999;
+  display: inline-block;
+  height: 250px;
+  width: 400px;
+  perspective: 1000px;
+  .flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    &.flipActivate {
+      transform: rotateY(180deg);
+    }
+    .cardFrontWrapper{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+      background-size: cover;
+      border-radius: 15px;
+      padding: 30px;
+      color: #fafafa;
+      .chip {
+
+      }
+      .cardLogo {
+
+      }
+      .cardNumberWrapper{
+        padding-top: 70px;
+        padding-bottom: 90px;
+        height: 20px;
+      }
+      .cardNumberAutocomplete {
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+      }
+      .bottomHalfFrontCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        .cardNameWrapper {
+          height: 32px;
+          .cardName {
+            margin-bottom: 5px;
+          }
+          .nameAutocomplete {
+            font-size: 1.1rem;
+            text-transform: capitalize;
+          }
+        }
+        .expireWrapper {
+          height: 32px;
+          width: 60px;
+          text-align: right;
+          .expire {
+            margin-bottom: 5px;
+          }
+          .expireAutocomplete {
+            font-size: 1.1rem;
+            
+          }
+        }
+      }
+
+    }
+    .cardBackWrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+      background-size: cover;
+      border-radius: 15px;
+      .magneticBand {
+        width: 100%;
+        height: 50px;
+        background-color: #111;
+        margin-top: 25px;
+        margin: 25px 0 20px;
+      }
+      .cvv {
+        text-align: right;
+        color: #fff;
+      }
+      .cvvAutocomplete {
+        background-color: #fff;
+        color: #111;
+        text-align: right;
+        height: 50px;
+        margin: 0 13px;
+        border-radius: 5px;
+      }
+      .cardLogo {
+
+      }
+    }
+  }
+}
