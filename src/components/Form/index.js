@@ -20,14 +20,13 @@ class Form extends React.Component {
     const { number } = this.state
 
       if (name === 'number') {
-        let original = '#### #### #### ####'
+        let original = '################'
         const arr = original.split('');
         let index = arr.indexOf('#');
         arr.splice(index, value.length, value);
-        let newNumber = arr.join('');
+        let newNumber = arr.join("").match(/.{1,4}/g)
+    .join(" ");
         
-        
-
         this.setState({
           [name]: value,
           number: newNumber
