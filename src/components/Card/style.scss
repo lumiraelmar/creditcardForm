@@ -88,6 +88,9 @@ $smallMobileSize: 320px;
         letter-spacing: 0.2rem;
         text-align: center;
         @media (max-width: $mobileSize) {
+          letter-spacing: 0.1rem;
+        }
+        @media (max-width: $smallMobileSize) {
           letter-spacing: 0.05rem;
         }
       }
