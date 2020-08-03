@@ -10,7 +10,7 @@ class Card extends React.Component {
         <div className={clase}>
           <div className='cardFrontWrapper'>
               <div className='chip'></div>
-              <div className='cardLogo'></div>
+              <div className='cardLogo'>VISA</div>
               <div className='cardNumberWrapper'>
                 <div className='cardNumber'></div>
                 <p className='cardNumberAutocomplete'>{number}</p>
@@ -29,9 +29,11 @@ class Card extends React.Component {
             </div>
           <div className='cardBackWrapper'>
               <div className='magneticBand'></div>
-              <p className='cvv'>CVV</p>
               <div className='cvvAutocomplete'>{cvv}</div>
               <div className='cardLogo'></div>
+              <p className='textBackCard'>Atencion al cliente: 0800-BANCO-FAKE <br /> 
+              No intentes llamar al numero, nunca contestamos. <br />
+              Si perdes la tarjeta no nos hacemos cargo, te odiamos. <br /> Un besito, el banco.</p>
           </div>
         </div>
       </div>

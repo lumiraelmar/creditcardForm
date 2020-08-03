@@ -76,7 +76,7 @@ class Form extends React.Component {
       <div className='formWrapper'>
         <div className='inputWrapper'>
           <label htmlFor='cardNumber' className='inputLabel'>Card Number</label>
-          <input name='number' type='text' className='input cardNumber' id='cardNumber' onChange={(e) => this.handleChange(e)} maxLength='16' onInput={this.maxLengthCheck}></input>
+          <input name='number' type='number' className='input cardNumber' id='cardNumber' onChange={(e) => this.handleChange(e)} maxLength='16' onInput={this.maxLengthCheck}></input>
         </div>
         <div className='inputWrapper'>
           <label htmlFor='cardName'  className='inputLabel'>Card Name</label>
