@@ -103,6 +103,9 @@ $smallMobileSize: 320px;
           height: 32px;
           .cardName {
             margin-bottom: 5px;
+            @media (max-width: $smallMobileSize) {
+              margin-bottom: 1px;
+            }
           }
           .nameAutocomplete {
             font-size: 1.1rem;
@@ -121,6 +124,9 @@ $smallMobileSize: 320px;
           text-align: right;
           .expire {
             margin-bottom: 5px;
+            @media (max-width: $smallMobileSize) {
+              margin-bottom: 1px;
+            }
           }
           .expireAutocomplete {
             font-size: 1.1rem;
