@@ -206,7 +206,7 @@ $smallMobileSize: 320px;
         color: #fff;
         @media (max-width: $mobileSize) {
           padding: 10px 0;
-          font-size: 0.65rem;
+          font-size: 0.5rem;
         }
         @media (max-width: $smallMobileSize) {
           display: none;
