@@ -9,7 +9,7 @@ class App extends React.Component {
 
     this.state = {
       number: '#### #### #### ####',
-      name: 'Juan Perez',
+      name: 'Juguito de Manzana',
       month: 'MM',
       year: 'YY',
       cvv: '',
