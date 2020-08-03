@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 $mobileSize: 480px;
+$smallMobileSize: 320px;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -42,6 +43,9 @@ ol, ul {
 	@media (max-width: $mobileSize) {
 		padding: 150px 0;
 	}
+	@media (max-width: $smallMobileSize) {
+		padding: 80px 0;
+	}
 	
 	.cardFormWrapper {
 		margin: 0 auto;
@@ -54,6 +58,10 @@ ol, ul {
 		box-shadow: 0px 35px 70px -10px rgba(0,0,0,0.40);
 		@media (max-width: $mobileSize) {
 			width: 380px;
+			margin: 0 auto;
+		}
+		@media (max-width: $smallMobileSize) {
+			width: 300px;
 			margin: 0 auto;
 		}
 	}

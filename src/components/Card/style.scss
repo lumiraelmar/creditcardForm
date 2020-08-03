@@ -1,4 +1,5 @@
 $mobileSize: 480px;
+$smallMobileSize: 320px;
 .cardWrapper {
   margin: -25% auto 50px;
   z-index: 9999;
@@ -11,6 +12,11 @@ $mobileSize: 480px;
     width: 300px;
     margin: -25% auto 25px;
   }
+  @media (max-width: $smallMobileSize) {
+    height: 150px;
+    width: 240px;
+  }
+  
   .flipCardInner {
     position: relative;
     width: 100%;
@@ -35,6 +41,9 @@ $mobileSize: 480px;
         padding: 15px 20px;
         border-radius: 10px;
       }
+      @media (max-width: $smallMobileSize) {
+        padding: 10px 15px;
+      }
       .chip {
         background:linear-gradient(120deg, #BF953F, #fdf7b2, #bd902f, #fdf7b2, #AA771C);
         width: 50px;
@@ -45,6 +54,11 @@ $mobileSize: 480px;
           width: 37.5px;
           height: 30px;
           margin-bottom: -30px;
+        }
+        @media (max-width: $smallMobileSize) {
+          width: 30px;
+          height: 24px;
+          margin-bottom: -25px;
         }
       }
       .cardLogo {
@@ -60,14 +74,22 @@ $mobileSize: 480px;
         height: 20px;
         font-size: 1.4rem;
         @media (max-width: $mobileSize) {
-          font-size: 1rem;
+          font-size: 0.95rem;
           padding-top: 55px;
           padding-bottom: 50px;
+        }
+        @media (max-width: $smallMobileSize) {
+          font-size: 0.95rem;
+          padding-top: 40px;
+          padding-bottom: 45px;
         }
       }
       .cardNumberAutocomplete {
         letter-spacing: 0.2rem;
         text-align: center;
+        @media (max-width: $mobileSize) {
+          letter-spacing: 0.05rem;
+        }
       }
       .bottomHalfFrontCard {
         display: flex;
@@ -88,6 +110,9 @@ $mobileSize: 480px;
             @media (max-width: $mobileSize) {
               font-size: 0.9rem;
             }
+            @media (max-width: $smallMobileSize) {
+              font-size: 0.85rem;
+            }
           }
         }
         .expireWrapper {
@@ -101,6 +126,9 @@ $mobileSize: 480px;
             font-size: 1.1rem;
             @media (max-width: $mobileSize) {
               font-size: 0.9rem;
+            }
+            @media (max-width: $smallMobileSize) {
+              font-size: 0.85rem;
             }
           }
         }
@@ -126,6 +154,9 @@ $mobileSize: 480px;
           height: 37.5px;
           margin: 20px 0 8px;
         }
+        @media (max-width: $smallMobileSize) {
+          height: 30px;
+        }
       }
       .cvvAutocomplete {
         background-color: #fff;
@@ -142,6 +173,9 @@ $mobileSize: 480px;
         @media (max-width: $mobileSize) {
           height: 37.5px;
           margin: 0 9px;
+        }
+        @media (max-width: $smallMobileSize) {
+          height: 30px;
         }
       }
       .cvv {
@@ -163,6 +197,9 @@ $mobileSize: 480px;
         @media (max-width: $mobileSize) {
           padding: 20px 0;
           font-size: 0.65rem;
+        }
+        @media (max-width: $smallMobileSize) {
+          display: none;
         }
       }
     }

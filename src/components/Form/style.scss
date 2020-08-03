@@ -1,4 +1,5 @@
 $mobileSize: 480px;
+$smallMobileSize: 320px;
 .formWrapper {
   margin: 0 auto;
   width: 100%;
@@ -24,6 +25,10 @@ $mobileSize: 480px;
         background-color: #fafafa;
         outline: none;
       }
+      @media (max-width: $smallMobileSize) {
+        padding: 7px;
+        margin-bottom: 5px;
+      }
     }
   }
   .expirationCVVWrapper {
@@ -32,14 +37,21 @@ $mobileSize: 480px;
     @media (max-width: $mobileSize) {
       flex-direction: column;
     }
+    
     .expirationWrapper {
       display: flex;
       flex: 1;
+      @media (max-width: $smallMobileSize) {
+        flex-direction: column;
+      }
       .input {
         width: 150px;
         margin-right: 8px;
         @media (max-width: $mobileSize) {
           width: 160px;
+        }
+        @media (max-width: $smallMobileSize) {
+          width: 100%;
         }
       }
     }
@@ -54,5 +66,8 @@ $mobileSize: 480px;
     margin-top: 10px;
     font-size: 0.9rem;
     font-weight: bold;
+    @media (max-width: $smallMobileSize) {
+      padding: 7px;
+    }
   }
 }
