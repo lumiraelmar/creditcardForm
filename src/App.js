@@ -43,15 +43,17 @@ class App extends React.Component {
     const { number, name, month, year, cvv, clase } = this.state
     return (
       <div className='wrapper'>
-        <Card 
-        number={number}
-        name={name}
-        month={month}
-        year={year}
-        cvv={cvv}
-        clase={clase}
-        />
-        <Form handleCallback={(number, name, month, year, cvv, clase) => this.handleCallback(number, name, month, year, cvv, clase)} handleFocusCallback={(clase) => this.handleFocusCallback(clase)} handleBlurCallback={(clase) => this.handleBlurCallback(clase)}/>
+        <div className='cardFormWrapper'>
+          <Card 
+          number={number}
+          name={name}
+          month={month}
+          year={year}
+          cvv={cvv}
+          clase={clase}
+          />
+          <Form handleCallback={(number, name, month, year, cvv, clase) => this.handleCallback(number, name, month, year, cvv, clase)} handleFocusCallback={(clase) => this.handleFocusCallback(clase)} handleBlurCallback={(clase) => this.handleBlurCallback(clase)}/>
+        </div>
       </div>
     )
   }
